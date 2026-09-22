@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cauã Martins - Sites Premium R$250 por R$75</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Outfit',sans-serif;background:#120c09;color:#fff;overflow-x:hidden}
+.top{background:radial-gradient(900px 400px at 20% 0%, #4B2E1F 0%, transparent), linear-gradient(180deg,#4B2E1F 0%,#1A120E 60%, #120c09 100%);padding:60px 20px 40px;text-align:center}
+.perfil img{width:120px;height:120px;border-radius:50%;border:3px solid #FFCCBC;object-fit:cover;box-shadow:0 0 0 8px rgba(255,204,188,.1), 0 20px 40px rgba(0,0,0,.5)}
+.top h2{margin-top:16px;font-size:28px;font-weight:900}
+.top span{font-size:13px;opacity:.7;display:block;margin-top:6px}
+.badge{display:inline-block;margin-top:12px;background:#FFCCBC;color:#4B2E1F;font-weight:900;font-size:11px;padding:7px 16px;border-radius:20px}
+.preco-antigo{text-decoration:line-through;opacity:.5;font-size:16px;margin-top:14px;display:block}
+.preco-novo{font-size:38px;font-weight:900;color:#25D366;line-height:1;margin-top:4px}
+.preco-novo small{font-size:14px;color:#fff;opacity:.8}
+.btn-whats{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:#25D366;color:#fff;padding:16px 32px;border-radius:30px;font-weight:900;text-decoration:none;font-size:16px;box-shadow:0 8px 25px rgba(37,211,102,.4);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.servicos{display:flex;justify-content:center;gap:16px;padding:30px 16px;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+.card{background:linear-gradient(180deg,#2A1D17,#231912);border:1px solid #5D403766;border-radius:20px;padding:22px;width:100%;max-width:340px;position:relative}
+.num{position:absolute;top:10px;right:16px;font-size:60px;font-weight:900;opacity:.08}
+.projetos{max-width:1100px;margin:0 auto;padding:20px 16px 50px}
+.titulo{text-align:center;margin:28px 0 10px;font-size:24px;font-weight:900}
+.sub{text-align:center;color:#8d7a71;margin-bottom:24px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.site-box{background:#fff;color:#1A120E;border-radius:22px;overflow:hidden;transition:.4s}
+.site-box:hover{transform:translateY(-8px) scale(1.02)}
+.site-box .img{height:185px;background-size:cover;background-position:center}
+.site-box .info{padding:18px;background:#fff}
+.botoes{display:flex;gap:8px;margin-top:14px}
+.b1,.b2{flex:1;text-align:center;padding:12px;border-radius:30px;font-weight:800;font-size:12px;text-decoration:none;cursor:pointer;border:none}
+.b1{background:#1A120E;color:#fff}
+.b2{background:#fff;border:2px solid #1A120E;color:#1A120E}
+.faixa{background:linear-gradient(90deg,#25D366,#128C7E);color:#fff;text-align:center;padding:16px;font-weight:900;font-size:13px}
+.link-cert{margin-top:14px}
+.link-cert a{color:#fff;border:1px solid rgba(255,255,255,.4);padding:8px 20px;border-radius:20px;text-decoration:none;font-size:11px}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);z-index:999;overflow-y:auto;padding:20px}
+.modal-box{max-width:620px;margin:20px auto;background:#fff;border-radius:22px;overflow:hidden;color:#111;animation:up .4s}
+@keyframes up{from{transform:translateY(40px) scale(.96);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+.modal-head{padding:18px;display:flex;justify-content:space-between;align-items:center;background:#111;color:#fff;font-weight:800}
+.modal-head button{background:#fff;color:#111;border:none;padding:6px 14px;border-radius:20px;font-weight:900;cursor:pointer}
+.demo-preco{background:#f6f1ee;padding:12px 18px;display:flex;justify-content:space-between;margin:8px 18px;border-radius:12px;font-size:14px}
+.demo-btn{display:block;margin:18px;background:#25D366;color:#fff;padding:15px;border-radius:30px;text-decoration:none;font-weight:900;text-align:center}
+.pagamento{max-width:720px;margin:30px auto;background:linear-gradient(135deg,#2A1D17,#1E1511);border:1px dashed #25D36666;border-radius:20px;padding:24px;text-align:center}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="perfil"><img src="IMG_9179.JPG" alt="Cauã"></div>
+  <h2 data-aos="zoom-in">CAUÃ MARTINS</h2>
+  <span data-aos="fade-up">Sites Premium • Belford Roxo • Entrega em 24h</span><br>
+  <div class="badge" data-aos="fade-up">🔥 OFERTA ESSA SEMANA - 70% OFF</div><br>
+  <span class="preco-antigo" data-aos="fade-up">DE R$250,00</span>
+  <div class="preco-novo" data-aos="zoom-in">R$75 <small>no Pix • único pagamento</small></div>
+  <a class="btn-whats" data-aos="fade-up" href="https://wa.me/5521993856784?text=Oi%20Cau%C3%A3%2C%20vi%20a%20promo%C3%A7%C3%A3o%20de%20R%24250%20por%20R%2475%20e%20quero%20meu%20site%20premium">💬 GARANTIR POR R$75 - (21) 99385-6784</a>
+  <div class="link-cert" data-aos="fade-up"><a href="https://drive.google.com/file/d/18-9980yhgO95lDWbU5MHhCgKQ4QYp3KD/view?usp=drivesdk">📄 VER CERTIFICADO</a></div>
+</div>
+
+<div class="servicos">
+  <div class="card" data-aos="fade-up"><div class="num">01</div><h3>CRIAÇÃO COM ANIMAÇÃO</h3><p>Site que abre lindo no celular, com animação quando rola, botão que pulsa e leva direto pro seu WhatsApp.</p></div>
+  <div class="card" data-aos="fade-up" data-aos-delay="100"><div class="num">02</div><h3>DESIGN QUE VENDE</h3><p>Não é só bonito, é estratégico. Feito pra seu cliente de Belford confiar e clicar.</p></div>
+  <div class="card" data-aos="fade-up" data-aos-delay="200"><div class="num">03</div><h3>SUPORTE TOTAL</h3><p>Entrego e te ensino a mudar tudo. Sem mensalidade. Seu pra sempre.</p></div>
+</div>
+
+<div class="projetos">
+  <h2 class="titulo" data-aos="fade-up">MEUS TRABALHOS PREMIUM</h2>
+  <p class="sub" data-aos="fade-up">Todos no valor de R$250 - hoje por R$75 na promo</p>
+  <div class="grid">
+    <div class="site-box" data-aos="fade-up"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800')"></div><div class="info"><h4>🔥 BARBEARIA REI DO CORTE</h4><p>Site com agendamento e tabela de preços.</p><div class="botoes"><button class="b1" onclick="document.getElementById('modal-barbearia').style.display='block'">VER AO VIVO</button><a class="b2" href="https://wa.me/5521993856784?text=Oi%20Cau%C3%A3%2C%20quero%20um%20site%20igual%20da%20barbearia%20-%20promo%20R%2475">QUERO IGUAL</a></div></div></div>
+    <div class="site-box" data-aos="fade-up" data-aos-delay="100"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=800')"></div><div class="info"><h4>💅 STUDIO BELLA</h4><p>Página rosa luxuosa com catálogo animado.</p><div class="botoes"><button class="b1" onclick="document.getElementById('modal-bella').style.display='block'">VER AO VIVO</button><a class="b2" href="https://wa.me/5521993856784?text=Oi%20Cau%C3%A3%2C%20quero%20um%20site%20igual%20do%20Studio%20Bella%20-%20promo%20R%2475">QUERO IGUAL</a></div></div></div>
+  </div>
+</div>
+
+<div class="pagamento" data-aos="zoom-in">
+  <h3>💳 COMO FUNCIONA - PROMO R$250 POR R$75</h3>
+  <p style="font-size:13.5px;margin-top:10px;line-height:1.6">
+    Estamos com desconto essa semana: site completo que cobro <b style="text-decoration:line-through">R$250</b> sai por apenas <b style="color:#25D366;font-size:16px">R$75 no Pix</b> - pagamento único.<br><br>
+    25% pra começar (R$20) e o resto só na entrega. Sem mensalidade. Se não gostar devolvo.<br>
+    <b style="color:#FFCCBC">+ BÔNUS: Coloco seu negócio no Google de graça</b>
+  </p>
+</div>
+
+<div class="faixa">⚡ OFERTA: DE R$250 POR R$75 - SÓ ESSA SEMANA - CHAMA: (21) 99385-6784</div>
+
+<!-- MODAL BARBEARIA -->
+<div id="modal-barbearia" class="modal" onclick="this.style.display='none'">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-head"><span>🔥 REI DO CORTE - Belford Roxo</span><button onclick="document.getElementById('modal-barbearia').style.display='none'">X</button></div>
+    <div style="height:200px;background:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800') center/cover;position:relative"><div style="position:absolute;bottom:10px;left:14px;background:rgba(0,0,0,.7);padding:6px 12px;border-radius:20px;color:#fff;font-size:12px">⭐ 4.9 (127 avaliações) • Aberto agora</div></div>
+    <div style="padding:20px">
+      <h3>Cortes a partir de R$25</h3>
+      <p style="font-size:12px;opacity:.6;margin:6px 0 12px">📍 Rua Manoel de Abreu, 250 - Centro, Belford Roxo</p>
+      <div class="demo-preco"><span>✂️ Corte simples</span><b>R$25</b></div>
+      <div class="demo-preco"><span>🔥 Corte + Barba</span><b>R$40</b></div>
+      <div class="demo-preco"><span>✨ Corte + Sobrancelha</span><b>R$35</b></div>
+      <div class="demo-preco"><span>👑 Corte + Barba + Sobrancelha</span><b>R$55</b></div>
+      <div class="demo-preco"><span>💈 Pacote Mensal</span><b>R$80</b></div>
+      <a class="demo-btn" href="https://wa.me/5521993856784?text=Oi%20Cau%C3%A3%2C%20quero%20um%20site%20igual%20o%20da%20Barbearia%20Rei%20do%20Corte%20-%20promo%20R%2475">QUERO UM SITE IGUAL ESSE</a>
+      <p style="text-align:center;font-size:11px;opacity:.5">Demo premium feito por Cauã Martins</p>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL BELLA -->
+<div id="modal-bella" class="modal" onclick="this.style.display='none'">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-head" style="background:linear-gradient(90deg,#E91E8C,#FF6EB5)"><span>💅 STUDIO BELLA</span><button onclick="document.getElementById('modal-bella').style.display='none'">X</button></div>
+    <div style="height:170px;background:linear-gradient(135deg,#FFB6D9,#E91E8C);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff"><h2 style="font-weight:900">Lash • Nails • Sobrancelha</h2><p style="font-size:12px;background:rgba(0,0,0,.2);padding:5px 12px;border-radius:20px;margin-top:8px">⭐ 5.0 (89 avaliações)</p></div>
+    <div style="padding:20px">
+      <h3>Mais pedidos da semana</h3>
+      <div class="demo-preco"><span>💖 Alongamento Lash</span><b>R$80</b></div>
+      <div class="demo-preco"><span>✨ Volume Russo</span><b>R$120</b></div>
+      <div class="demo-preco"><span>💅 Unha em Gel</span><b>R$60</b></div>
+      <div class="demo-preco"><span>🌸 Sobrancelha + Henna</span><b>R$45</b></div>
+      <a class="demo-btn" style="background:linear-gradient(90deg,#E91E8C,#FF6EB5)" href="https://wa.me/5521993856784?text=Oi%20Cau%C3%A3%2C%20quero%20um%20site%20igual%20o%20Studio%20Bella%20-%20promo%20R%2475">QUERO UM SITE IGUAL ESSE</a>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/5521993856784?text=Oi%20Cau%C3%A3%2C%20vi%20a%20promo%C3%A7%C3%A3o%20de%20R%24250%20por%20R%2475%20e%20quero%20meu%20site%20premium" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;box-shadow:0 8px 25px rgba(0,0,0,.4);z-index:9999;animation:pulse 2s infinite">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration:800,once:true});</script>
+</body>
+</html>
